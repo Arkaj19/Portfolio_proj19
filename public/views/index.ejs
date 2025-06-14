@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="/css/style2.css">
+    <link rel="stylesheet" href="/css/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><%= portfolio %></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo"> Arkajyoti </div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="/images/Arkajyoti Image for proj.jpg" class="photo" alt="My photo">
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Arkajyoti Karmakar</h1>
+        <p class="section__text__p2">Software Engineer Trainee</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('/pdf/Smartforms_code.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+            <img 
+            src="/images/linkedin_1384014.png" 
+            alt="Linked profile" 
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+            />
+            <img 
+            src="/images/github_11376339.png" 
+            alt="Github profile" 
+            class="icon"
+            onclick="location.href='https://github.com/'"/>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+            <img 
+            src="/images/About image.jpg" 
+            class="about-pic" 
+            alt="Profile picture"/>
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+                <img 
+                src="/images/Experience icon.png" 
+                class="icon" 
+                alt="Experience icon"
+                />
+                <h3>Experience</h3>
+                <p>1+ years <br>Software Engineering</p>
+            </div>
+            <div class="details-container">
+                <img 
+                src="/images/graduation-hat_3279772.png" 
+                class="icon" 
+                alt="Education icon"
+                />
+            <h3>Education</h3>
+            <p>B.Tech Bachelor's Degree <br> Electronics and Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Since joining GyanSys Inc. as a Software Engineer Trainee in May 2024, my journey from intern to a pivotal team role reflects a commitment to growth and technological innovation. With a fresh BTech in Electronics and Computer from Kalinga Institute of Industrial Technology, I apply my academic knowledge to real-world problems. Combining expertise in Java Database Connectivity, HTML, and Flask, our team is enhancing software solutions, while my HackerRank certifications in Java and Problem Solving underscore a solid foundation in critical technical skills. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+      src="/images/down-chevron_10117712.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#experience'"
+      />
+    </section>
+
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+                <article>
+                    <img src="/images/check_1055182.png" class="icon" alt="Check mark"/>
+                    <div>
+                        <h3>HTML</h3>
+                        <p>Experienced</p>
+                    </div> 
+                </article>
+                <article>
+                    <img src="/images/check_1055182.png" class="icon" alt="Check mark"/>
+                    <div>
+                        <h3>CSS</h3>
+                        <p>Intermediate</p>
+                    </div> 
+                </article>
+                <article>
+                    <img src="/images/check_1055182.png" class="icon" alt="Check mark"/>
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>Beginner</p>
+                    </div> 
+                </article>
+                <article>
+                    <img src="/images/check_1055182.png" class="icon" alt="Check mark"/>
+                    <div>
+                        <h3>ReactJS</h3>
+                        <p>Beginner</p>
+                    </div> 
+                </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+                <article>
+                    <img src="/images/check_1055182.png" class="icon" alt="Check mark"/>
+                    <div>
+                        <h3>SQL</h3>
+                        <p>Experienced</p>
+                    </div> 
+                </article>
+                <article>
+                    <img src="/images/check_1055182.png" class="icon" alt="Check mark"/>
+                    <div>
+                        <h3>C++</h3>
+                        <p>Experienced</p>
+                    </div> 
+                </article>
+                <article>
+                    <img src="/images/check_1055182.png" class="icon" alt="Check mark"/>
+                    <div>
+                        <h3>DSA</h3>
+                        <p>Experienced</p>
+                    </div> 
+                </article>
+                <article>
+                    <img src="/images/check_1055182.png" class="icon" alt="Check mark"/>
+                    <div>
+                        <h3>Java</h3>
+                        <p>Intermediate</p>
+                    </div> 
+                </article>
+                <article>
+                    <img 
+                    src="/images/check_1055182.png" 
+                    class="icon" 
+                    alt="Check mark"
+                    />
+                    <div>
+                        <h3>Machine Learning</h3>
+                        <p>Intermediate</p>
+                    </div> 
+                </article>
+                <article>
+                    <img 
+                    src="/images/check_1055182.png" 
+                    class="icon" 
+                    alt="Check mark"
+                    />
+                    <div>
+                        <h3>SAP ABAP</h3>
+                        <p>Intermediate</p>
+                    </div> 
+                </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+      src="/images/down-chevron_10117712.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="/images/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Music Recommendation System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="/images/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Movie Recommendation System</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="/images/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">BHappy - Mental Wellbeing app</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+      src="/images/down-chevron_10117712.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="/images/email_3178158.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:arkajyoti@gmail.com">arkajyoti@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="/images/linkedin_1384014.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/arkajyoti-karmakar-27bb93249/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Arkajyoti Karmakar. All Rights Reserved.</p>
+    </footer>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
